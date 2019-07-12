@@ -23,7 +23,7 @@
   justify-content: space-between;
   align-items: center;
   width: 75vw;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .person-description {
@@ -33,4 +33,13 @@
 .meta-container {
   margin: 10px 0;
   color: rgb(136, 136, 136);
+}
+
+.buttons-holder {
+  width: 20vw;
+  margin: 10px auto;
+}
+
+.buttons-holder button {
+  margin: 0 20px;
 }

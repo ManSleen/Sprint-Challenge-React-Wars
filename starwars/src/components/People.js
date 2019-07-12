@@ -1,6 +1,6 @@
 import React from "react";
 import Person from "./Person";
-import { Loader, Dimmer } from "semantic-ui-react";
+
 import { Card } from "semantic-ui-react";
 import "../App.css";
 
@@ -9,15 +9,9 @@ const People = ({ people }) => {
   return (
     <div className="people-container">
       <Card.Group centered>
-        {people ? (
-          people.map(person => {
-            return <Person key={person.name} person={person} />;
-          })
-        ) : (
-          <Dimmer active>
-            <Loader>Loading...</Loader>
-          </Dimmer>
-        )}
+        {people.map(person => {
+          return <Person key={person.name} person={person} />;
+        })}
       </Card.Group>
     </div>
   );
