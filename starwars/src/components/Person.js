@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Icon } from "semantic-ui-react";
+import "../App.css";
 
 const Person = ({ person }) => {
   console.log(person);
@@ -11,12 +12,28 @@ const Person = ({ person }) => {
     </a>
   );
 
+  const meta = (
+    <div className="meta-container">
+      {`Gender: ${person.gender}`}
+      <br />
+      {`Birth Year: ${person.birth_year}`}
+    </div>
+  );
+
   return (
     <Card
       image={require("../images/stormtrooper.png")}
       header={person.name}
-      meta={person.gender}
-      description="Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat."
+      meta={meta}
+      description={`${person.name} is ${person.height}cm tall, weighs ${
+        person.mass
+      }kg, has an eye color of ${person.eye_color}, a skin color of ${
+        person.skin_color
+      } and a hair color of ${person.hair_color}. ${
+        person.name
+      } has starred in ${person.films.length} films. Vehicles owned: ${
+        person.vehicles.length
+      }.`}
       extra={extra}
     />
   );

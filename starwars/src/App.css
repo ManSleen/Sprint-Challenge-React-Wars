@@ -22,3 +22,12 @@
   width: 75vw;
   margin: 0 auto;
 }
+
+.person-description {
+  text-align: left;
+}
+
+.meta-container {
+  margin: 10px 0;
+  color: rgb(136, 136, 136);
+}
