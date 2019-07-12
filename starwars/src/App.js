@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import People from "./components/People";
 import axios from "axios";
 import "./App.css";
+import "semantic-ui-css/semantic.min.css";
 
 const App = () => {
   const [people, setPeople] = useState(null);
