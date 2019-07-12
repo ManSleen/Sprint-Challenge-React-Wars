@@ -1,8 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  background-image: url("./sw-bg.jpg");
+  background-size: cover;
+  padding: 30px 0;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-size: 6rem;
+  margin-bottom: 30px;
 }
-/* write your parent styles in here for your App.js */
+
+.people-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 75vw;
+  margin: 20px auto;
+}
+
+.person-description {
+  text-align: left;
+}
+
+.meta-container {
+  margin: 10px 0;
+  color: rgb(136, 136, 136);
+}
+
+.buttons-holder {
+  width: 20vw;
+  margin: 10px auto;
+}
+
+.buttons-holder button {
+  margin: 0 20px;
+}
