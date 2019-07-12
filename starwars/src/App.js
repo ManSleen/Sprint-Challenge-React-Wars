@@ -6,6 +6,7 @@ import "semantic-ui-css/semantic.min.css";
 
 const App = () => {
   const [people, setPeople] = useState(null);
+  const [page, setPage] = useState("");
 
   useEffect(() => {
     axios
